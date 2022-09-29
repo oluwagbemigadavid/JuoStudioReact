@@ -1,0 +1,43 @@
+@keyframes left-right {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 7rem;
+    }
+}
+.Logo {
+    width: 7rem;
+    height: 2.5rem;
+    position: relative;
+    padding: .5rem 0;
+    margin: auto 0;
+    .logo-container {
+        width: 7rem;
+        height: 2.5rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        animation: left-right 1000ms ease;
+        p {
+            width: 7rem;
+            height: 2.5rem;
+            position: absolute;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            border-radius: 5px;
+            a {
+                text-decoration: none;
+                color: #000;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: bolder;
+                
+            }
+        }
+    }
+    
+}

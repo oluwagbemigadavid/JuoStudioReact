@@ -1,0 +1,59 @@
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.row-one {
+  width: 88%;
+  padding-left: 5rem;
+}
+.row-one .row-one-container {
+  display: flex;
+  justify-content: left;
+}
+.row-one .row-one-container .search {
+  margin: auto 0;
+  margin-left: 7rem;
+  width: 33%;
+  text-align: left;
+  cursor: pointer;
+  -webkit-animation: appear 1s ease;
+          animation: appear 1s ease;
+}
+.row-one .row-one-container .search .search-container {
+  padding-bottom: 2%;
+  border-bottom: 2px solid #fff;
+}
+.row-one .row-one-container .search input {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #fff;
+}
+.row-one .row-one-container .search ::-moz-placeholder {
+  color: #fff;
+}
+.row-one .row-one-container .search :-ms-input-placeholder {
+  color: #fff;
+}
+.row-one .row-one-container .search ::placeholder {
+  color: #fff;
+}
+.row-one .row-one-container .search input:focus {
+  border: none;
+  outline: none;
+}
+.row-one .row-one-container .search .i {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=RowOne.css.map */

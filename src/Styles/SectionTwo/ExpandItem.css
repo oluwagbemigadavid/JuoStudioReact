@@ -1,0 +1,119 @@
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.expand-item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.expand-item .expand-item-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expand-item .expand-item-container .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.expand-item .expand-item-container .left .left-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-animation: top-bottom-img 1000ms ease;
+          animation: top-bottom-img 1000ms ease;
+}
+.expand-item .expand-item-container .left .left-container .left-contents {
+  width: 30%;
+  position: absolute;
+}
+.expand-item .expand-item-container .left .left-container .left-contents .item {
+  width: 100%;
+  margin: auto auto;
+}
+.expand-item .expand-item-container .right {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.expand-item .expand-item-container .right .right-container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-animation: slide-left 450ms;
+          animation: slide-left 450ms;
+}
+.expand-item .expand-item-container .right .right-container .right-contents {
+  padding: 10rem;
+  text-align: left;
+  overflow: hidden;
+}
+.expand-item .expand-item-container .right .right-container .right-contents .right-item {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  -webkit-animation: slide-left 1000ms;
+          animation: slide-left 1000ms;
+  -webkit-animation: appear 2000ms;
+          animation: appear 2000ms;
+}
+.expand-item .expand-item-container .right .right-container .right-contents .right-item p {
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+.expand-item .expand-item-container .right .right-container .right-contents h4 {
+  margin: 3rem 0 0;
+  -webkit-animation: slide-left 1000ms;
+          animation: slide-left 1000ms;
+  -webkit-animation: appear 2000ms;
+          animation: appear 2000ms;
+}
+.expand-item .expand-item-container .right .right-container .right-contents .close {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  border: 3px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 180px;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  -webkit-animation: appear 2000ms;
+          animation: appear 2000ms;
+}
+.expand-item .expand-item-container .right .right-container .right-contents .close p {
+  margin: 0;
+  font-size: 20px;
+}/*# sourceMappingURL=ExpandItem.css.map */

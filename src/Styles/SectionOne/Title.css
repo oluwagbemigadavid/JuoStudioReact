@@ -1,0 +1,36 @@
+@-webkit-keyframes top-from-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes top-from-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.title {
+  position: relative;
+  height: 14vh;
+}
+.title .title-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.title .title-container h1 {
+  margin: 0;
+  font-size: 100px;
+}
+.title .title-container.show {
+  opacity: 1;
+}
+.title .title-container.show h1 {
+  -webkit-animation: top-from-bottom 1000ms ease;
+          animation: top-from-bottom 1000ms ease;
+}/*# sourceMappingURL=Title.css.map */

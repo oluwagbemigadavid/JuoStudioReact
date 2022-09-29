@@ -1,0 +1,67 @@
+.section-two {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 10rem 0 0;
+}
+.section-two .section-two-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section-two .section-two-container .section-two-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.section-two .section-two-container .section-two-background img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.section-two .section-two-container .section-two-background .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  transition: -webkit-backdrop-filter 450ms;
+  transition: backdrop-filter 450ms;
+  transition: backdrop-filter 450ms, -webkit-backdrop-filter 450ms;
+}
+.section-two .section-two-container .section-two-background .overlay.active {
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  transition: -webkit-backdrop-filter 250ms;
+  transition: backdrop-filter 250ms;
+  transition: backdrop-filter 250ms, -webkit-backdrop-filter 250ms;
+}
+.section-two .section-two-container .section-two-body {
+  position: relative;
+  display: flex;
+  text-align: left;
+}
+.section-two .section-two-container .section-two-body ::-webkit-scrollbar {
+  display: none;
+}
+.section-two .section-two-container .section-two-body .section-two-body-main {
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll;
+}
+.section-two .section-two-container .section-two-body .section-two-body-main .expanded-view {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.section-two .section-two-container .section-two-body .section-two-body-main .expanded-view.ex {
+  display: none;
+}/*# sourceMappingURL=SectionTwo.css.map */

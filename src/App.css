@@ -1,38 +1,41 @@
+@import url('https://fonts.google.com/specimen/Public+Sans');
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .App {
-  text-align: center;
+  font-family: Apercu Pro;
+  text-align: center; 
+  color: #fff;
+  background-color: hsl(0, 0%, 98%);
+  width: 100%;
+}
+.gradient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(232deg,#000000,#ff292d,#42e9ff);
+  background-size: 300% 300%;
+  animation: gradient-animation 20s ease infinite;
+  z-index: 0;
+}
+.app-container {
+  position: relative;
+  width: 100%;
+  margin: 2% 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (min-width: 1440px) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

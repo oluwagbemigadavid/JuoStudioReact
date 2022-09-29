@@ -1,0 +1,45 @@
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.row-one {
+    width: 88%;
+    padding-left: 5rem;
+    .row-one-container {
+        display: flex;
+        justify-content: left;
+        .search {
+          margin: auto 0;
+          margin-left: 7rem;
+          width: 33%;
+          text-align: left;
+          cursor: pointer;
+          animation: appear 1s ease;
+          .search-container {
+            padding-bottom: 2%;
+            border-bottom: 2px solid #fff;
+          }
+          input {
+            background-color: transparent;
+            border: none;
+            font-size: 25px;
+            color: #fff;
+          }
+          ::placeholder { 
+           color: #fff;
+          }
+          input:focus {
+            border: none;
+            outline: none;
+          }
+          .i {             
+            margin-right: .5rem;     
+          }
+        }
+    }
+    
+}

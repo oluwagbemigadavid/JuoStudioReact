@@ -1,0 +1,22 @@
+.small-image {
+  position: relative;
+  width: 12vw;
+  height: 28vh;
+}
+.small-image .small-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-animation: top-bottom-img 2000ms ease;
+          animation: top-bottom-img 2000ms ease;
+}
+.small-image .small-image-container .small-img {
+  position: absolute;
+  width: 12vw;
+  height: 28vh;
+}
+.small-image .small-image-container .small-img img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=SmallImage.css.map */

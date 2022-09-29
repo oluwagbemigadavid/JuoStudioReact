@@ -1,0 +1,31 @@
+.items-container .items {
+  display: flex;
+  width: 250%;
+  margin-left: 1%;
+}
+.items-container .items .red-banner {
+  position: relative;
+  height: 100%;
+  background-color: rgb(234, 0, 0);
+  width: 10%;
+  padding: 0.5%;
+  margin: 0 4.5% 0 0.5rem;
+}
+.items-container .items .red-banner h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.items-container .items .item {
+  width: 40%;
+  height: 100%;
+  margin: 3% 3% 1%;
+  box-shadow: 30px 30px 20px 10px rgba(0, 0, 0, 0);
+  transition: box-shadow 450ms;
+}
+.items-container .items .item:hover {
+  box-shadow: 30px 30px 20px 10px rgba(0, 0, 0, 0.9);
+  transition: box-shadow 450ms;
+}
+.items-container .items .item:nth-child(odd) {
+  margin-top: 8%;
+}/*# sourceMappingURL=Items.css.map */

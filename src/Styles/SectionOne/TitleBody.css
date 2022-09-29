@@ -1,0 +1,14 @@
+.title-body {
+  width: 47%;
+  position: relative;
+}
+.title-body .title-body-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.title-body .title-body-container p {
+  -webkit-animation: left-from-right 1000ms ease;
+          animation: left-from-right 1000ms ease;
+  font-size: 18px;
+}/*# sourceMappingURL=TitleBody.css.map */

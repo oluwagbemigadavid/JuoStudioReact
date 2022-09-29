@@ -1,0 +1,41 @@
+@keyframes left-from-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.row-two {
+    text-align: left;
+    width: 80%;
+    position: relative;
+    margin: 3rem 0;
+    padding-left: 5rem;
+    z-index: 2;
+    .row-two-container {
+        overflow: hidden;
+        position: relative;
+        padding: .5rem 0;
+        margin: auto 0;
+        display: flex;
+        .our-gallery-container {
+            width: 7rem;
+            position: relative;
+            .our-gallery {
+                width: 7rem;
+                position: absolute;
+                animation: left-from-right 1000ms ease;
+                p {
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+
+            }
+        }
+        .row-two-body {
+            margin-left: 7rem;
+        }
+    }
+}

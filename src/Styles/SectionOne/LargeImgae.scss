@@ -1,0 +1,21 @@
+.large-image {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    .large-image-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        animation: top-bottom-img 2000ms ease;
+        .large-img {
+            position: absolute;
+            width: 32vw;
+            height: 40vh;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

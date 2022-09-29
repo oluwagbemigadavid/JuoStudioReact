@@ -1,0 +1,19 @@
+.item {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+    margin: 5rem;
+    cursor: pointer;
+    img {
+        width: 100%
+    }
+    .attrs {
+        display: flex;
+        justify-content: space-between;
+        h4 {
+            margin: 0;
+            margin-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.row-three {
+  text-align: left;
+  width: 90%;
+  position: relative;
+  margin: 3rem 0;
+  margin-top: 7rem;
+  padding-left: 5rem;
+  z-index: 2;
+}
+.row-three .row-three-container {
+  position: relative;
+  padding: 0.5rem 0;
+  margin: auto 0;
+  display: flex;
+  overflow: hidden;
+}
+.row-three .row-three-container .year-container {
+  width: 7rem;
+  position: relative;
+}
+.row-three .row-three-container .year-container .year {
+  width: 7rem;
+  position: absolute;
+  -webkit-animation: left-from-right 1000ms ease;
+          animation: left-from-right 1000ms ease;
+}
+.row-three .row-three-container .year-container .year h2 {
+  margin: 0;
+  font-size: 34px;
+}
+.row-three .row-three-container .year-container .year p {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+.row-three .row-three-container .year-container .year.show {
+  -webkit-animation: left-from-right 1000ms ease;
+          animation: left-from-right 1000ms ease;
+}
+.row-three .row-three-container .row-three-body {
+  margin-left: 9rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.row-three .row-three-container .row-three-body .row-three-image-container {
+  position: relative;
+  width: 50%;
+  height: 45vh;
+}
+.row-three .row-three-container .row-three-body .row-three-image-container .row-three-image-texts {
+  position: absolute;
+  bottom: 11.5%;
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 50px;
+  -webkit-animation: appear 1s ease-in;
+          animation: appear 1s ease-in;
+}
+.row-three .row-three-container .row-three-body .row-three-image-container .row-three-image-texts p {
+  font-size: 20px;
+  margin: 0.25rem 0;
+}
+.row-three .row-three-container .row-three-body .row-three-image-container .row-three-small-image {
+  position: absolute;
+  bottom: -7%;
+  right: 5%;
+}
+.row-three .row-three-container .row-three-body .row-three-body-main {
+  width: 50%;
+  position: absolute;
+  left: 55%;
+}
+.row-three .row-three-container .row-three-body .row-three-body-main .title-body {
+  width: 72%;
+}/*# sourceMappingURL=RowThree.css.map */

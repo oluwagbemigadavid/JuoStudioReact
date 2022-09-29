@@ -1,0 +1,74 @@
+
+.row-three {
+    text-align: left;
+    width: 90%;
+    position: relative;
+    margin: 3rem 0;
+    margin-top: 7rem;
+    padding-left: 5rem;
+    z-index: 2;
+    .row-three-container {
+        position: relative;
+        padding: .5rem 0;
+        margin: auto 0;
+        display: flex;
+        overflow: hidden;
+        .year-container {
+            width: 7rem;
+            position: relative;
+            .year {
+                width: 7rem;
+                position: absolute;
+                animation: left-from-right 1000ms ease;
+                h2 {
+                    margin: 0;
+                    font-size: 34px;
+                }
+                p {
+                    margin: .5rem 0;
+                    text-transform: uppercase;
+                }
+
+            }
+            .year.show {
+                animation: left-from-right 1000ms ease;
+            }
+        }
+        .row-three-body {
+            margin-left: 9rem;
+            width: 100%;
+            display: flex;
+            position: relative;
+            .row-three-image-container {
+                position: relative;
+                width: 50%;
+                height: 45vh;
+                .row-three-image-texts {
+                    position: absolute;
+                    bottom: 11.5%;
+                    padding: 5%;
+                    background-color: rgba(#000, .5);
+                    border-top-right-radius: 50px;
+                    animation: appear 1s ease-in;
+                    p {
+                        font-size: 20px;
+                        margin: .25rem 0;
+                    }
+                }
+                .row-three-small-image {
+                    position: absolute;
+                    bottom: -7%;
+                    right: 5%;
+                }
+            }
+            .row-three-body-main {
+                width: 50%;
+                position: absolute;
+                left: 55%;
+                .title-body {
+                    width: 72%;
+                }
+            }
+        }
+    }
+}

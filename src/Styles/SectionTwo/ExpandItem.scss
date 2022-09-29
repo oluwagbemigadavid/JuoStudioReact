@@ -1,0 +1,106 @@
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.expand-item {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .expand-item-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .left-container {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                animation: top-bottom-img 1000ms ease;
+                .left-contents {
+                    width: 30%;
+                    position: absolute;
+                    .item {
+                        width: 100%;
+                        margin: auto auto;
+                    }
+
+                }
+            }
+        }
+        .right {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            .right-container {
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                animation: slide-left 450ms;
+                .right-contents{
+                    padding: 10rem;
+                    text-align: left;
+                    overflow: hidden;
+                    .right-item {
+                        display: grid;
+                        grid-template-columns: 1.5fr 3fr;
+                        border-bottom: 1px solid #000;
+                        border-top: 1px solid #000;
+                        animation: slide-left 1000ms;
+                        animation: appear 2000ms;
+                        p {
+                            text-transform: uppercase;
+                            padding: .5rem 0;
+                        }
+                    }
+                    h4 {
+                        margin: 3rem 0 0;
+                        animation: slide-left 1000ms;
+                        animation: appear 2000ms;
+                    }
+                    .close {
+                        position: absolute;
+                        top: 10%;
+                        right: 5%;
+                        border: 3px solid #000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 180px;
+                        width: 3rem;
+                        height: 3rem;
+                        cursor: pointer;
+                        animation: appear 2000ms;
+                        p {
+                            margin: 0;
+                            font-size: 20px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

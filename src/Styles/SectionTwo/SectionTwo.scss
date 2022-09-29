@@ -1,0 +1,60 @@
+
+.section-two {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 10rem 0 0;
+    .section-two-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .section-two-background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            .overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#000, .4);
+                top: 0;
+                left: 0;
+                backdrop-filter: blur(0px);
+                transition: backdrop-filter 450ms ;
+            }
+            .overlay.active {
+                z-index: 4;
+                background-color: rgba(#000, .8);
+                backdrop-filter: blur(15px);
+                transition: backdrop-filter 250ms ;
+            }
+        }
+        .section-two-body {
+            position: relative;
+            display: flex;
+            text-align: left;
+            ::-webkit-scrollbar {display:none;}
+            .section-two-body-main {
+                width: 100%;
+                height: 100vh;
+                overflow-x: scroll;
+                .expanded-view{
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 5;
+                }
+                .expanded-view.ex {
+                    display: none;
+                }
+            }
+        }
+    }
+}

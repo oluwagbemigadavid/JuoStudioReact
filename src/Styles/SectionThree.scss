@@ -1,0 +1,156 @@
+
+.section-three {
+    text-align: left;
+    background-color: #fff;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    padding: 5rem 0;
+    z-index: 2;
+    .section-three-container {
+        position: relative;
+        padding: 5rem 0;
+        margin: auto 0;
+        display: flex;
+        overflow: hidden;
+        padding-left: 5rem;
+        .year-container {
+            width: 7.5rem;
+            margin-top: .5rem;
+            position: relative;
+            overflow: hidden;
+            color: #000;
+            .year {
+                width: 7rem;
+                position: absolute;
+                opacity: 0;
+                h2 {
+                    margin: 0;
+                    font-size: 50px;
+                }
+                p {
+                    margin: .5rem 0;
+                    text-transform: uppercase;
+                }
+
+            }
+            .year.show {
+                opacity: 1;
+                animation: left-from-right 1000ms ease;
+            }
+        }
+        .section-three-body {
+            margin-left: 9rem;
+            width: 100%;
+            position: relative;
+            color: #000;
+            .section-three-left {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+                .section-three-image-container {
+                    position: relative;
+                    margin-top: 5rem;
+                    width: 50%;
+                    height: 45vh; 
+                    .large-image {
+                        .large-image-container {
+                            animation: none 1000ms ease;
+                        }
+        
+                        .large-image-container.show {
+                            animation: top-bottom-img 1000ms ease;
+                        }
+                    }
+                    .section-three-small-image {
+                        position: absolute;
+                        top: -7%;
+                        right: 5%;
+                        .small-image {
+                            .small-image-container {
+                                animation: none 1000ms ease;
+                            }
+            
+                            .small-image-container.show {
+                                animation: top-bottom-img 1000ms ease;
+                            }
+                        }
+                    }
+                }
+                .section-three-body-main {
+                    width: 50%;
+                    position: relative;
+                    .title-body {
+                        width: 72%;
+                        height: 18vh;
+                        position: relative;
+                        .title-body-container {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            opacity: 0;
+                            p {            
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                animation: none;
+                            }
+                        }                  
+                        .title-body-container.show {
+                            opacity: 1;
+                            animation: top-bottom-img 2000ms ease backwards;
+                        }
+                    }
+                    .section-three-btn {
+                        width: 100%;
+                        height: 10vh;
+                        position: relative;
+                        .button {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            overflow: hidden;
+                            .button-container {
+                                height: 7vh;
+                                position: absolute;
+                                .btn {
+                                    color: #fff;
+                                    p {
+                                        background-color: #000;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+            }
+            .section-three-right {
+                width: 50%;
+                height: 100vh;
+                position: absolute;
+                top: 16%;
+                left: 90%;
+                .section-three-right-img-container {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    .section-three-right-img {
+                        transform: scale(2);
+                        .large-image {
+                            .large-image-container {
+                                animation: none 1000ms ease;
+                            }
+            
+                            .large-image-container.show {
+                                animation: top-bottom-img 1000ms ease;
+                            }
+                        }
+                    }                    
+                }
+            }            
+        }
+    }
+}
